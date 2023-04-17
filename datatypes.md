@@ -39,14 +39,26 @@ Unicode Scalar Values range from U+0000 to U+D7FF and U+E000 to U+10FFFF inclusi
 ## compound types:
 ### The Tuple type
 A tuple is a general way of grouping together a number of values with a variety of types into one compound type. Tuples have a fixed length: once declared, they cannot grow or shrink in size.
-
+```
+let tup: (i32, f64, u8) = (500, 6.4, 1);
+```
+#### Accessing Tuppe elements
+```
+let five_hundred = tup.0
+let six_point_fout = tup.1
+```
 ### The Array type
 Another way to have a collection of multiple values is with an array. Unlike a tuple, every element of an array must have the same type. Unlike arrays in some other languages, arrays in Rust have a fixed length.
 Arrays are useful when you want your data allocated on the stack rather than the heap
 
 You write an array’s type using square brackets with the type of each element, a semicolon, and then the number of elements in the array, like so:
-
+```
 let a: [i32; 5] = [1, 2, 3, 4, 5];
-
+```
+#### Accessing Array elements
+```
+let first = a[0];
+let second = a[1];
+```
 ### The Vector type
 A vector is a similar collection type provided by the standard library that is allowed to grow or shrink in size
