@@ -1,2 +1,2 @@
-# RustPlayground
-Learning Rust-Lang
+# RustPlaygrou
+Learning Rust-Lang from https://www.rust-lang.org/learn
