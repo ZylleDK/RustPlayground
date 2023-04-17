@@ -26,13 +26,27 @@ isize and usize are decided by the CPU architecture running the program. If a 32
 >Let’s say you have a variable of type u8 that can hold values between 0 and 255. If you try to change the variable to a value outside that range, such as 256, integer overflow will occur, which can result in one of two behaviors. When you’re compiling in debug mode, Rust includes checks for integer overflow that cause your program to panic at runtime if this behavior occurs. When you’re compiling in release mode with the --release flag, Rust does not include checks for integer overflow that cause panics. Instead, if overflow occurs, Rust performs two’s complement wrapping. In short, values greater than the maximum value the type can hold “wrap around” to the minimum of the values the type can hold. In the case of a u8, the value 256 becomes 0, the value 257 becomes 1, and so on. 
  
 >Relying on integer overflow’s wrapping behavior is considered an error.
-### floating-point
-
-### numbers
-
+### floating-point numbers
+Rust has two primitive types for floating-point numbers, which are numbers with decimal points. Rust’s floating-point types are f32 and f64, which are 32 bits and 64 bits in size, respectively. 
 ### Booleans
-
+As in most other programming languages, a Boolean type in Rust has two possible values: true and false. Booleans are one byte in size. The Boolean type in Rust is specified using bool.
 ### characters
+Rust’s char type is the language’s most primitive alphabetic type. Note that we specify char literals with single quotes, as opposed to string literals, which use double quotes.
+Rust’s char type is four bytes in size and represents a Unicode Scalar Value, which means it can represent a lot more than just ASCII.
+Unicode Scalar Values range from U+0000 to U+D7FF and U+E000 to U+10FFFF inclusive. However, a “character” isn’t really a concept in Unicode, so your human intuition for what a “character” is may not match up with what a char is in Rust. 
 
 
 ## compound types:
+### The Tuple type
+A tuple is a general way of grouping together a number of values with a variety of types into one compound type. Tuples have a fixed length: once declared, they cannot grow or shrink in size.
+
+### The Array type
+Another way to have a collection of multiple values is with an array. Unlike a tuple, every element of an array must have the same type. Unlike arrays in some other languages, arrays in Rust have a fixed length.
+Arrays are useful when you want your data allocated on the stack rather than the heap
+
+You write an array’s type using square brackets with the type of each element, a semicolon, and then the number of elements in the array, like so:
+
+let a: [i32; 5] = [1, 2, 3, 4, 5];
+
+### The Vector type
+A vector is a similar collection type provided by the standard library that is allowed to grow or shrink in size
