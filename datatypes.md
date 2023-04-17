@@ -12,6 +12,17 @@
 | 64-bit | i64 | u64 |
 | 128-bit |	i128 | u128 |
 | arch | isize | usize |
+
+isize and usize are decided by the CPU architecture running the program. If a 32-bit CPU is running the program the length is 32-bit, wheres as a 64-bit CPU will have a length of 64-bit.
+
+| Number literals | Example | 
+| ------------- | ------------- |
+| Decimal | 98_222 |
+| Hex | 0xfe |
+| Octal | 0o76 |
+| Binary | 0b1111_1110 |
+| Byte (u8 only) | b'A' |
+
 ### floating-point
 
 ### numbers
