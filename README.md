@@ -1,8 +1,9 @@
 # RustPlaygroud
 Learning Rust-Lang from https://www.rust-lang.org/learn
 
-## Data types:
+## Notater
+### Data types:
 [Data types](datatypes.md)
 
-## Links
+### Links
 [Links](links.md)
