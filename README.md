@@ -4,25 +4,24 @@ Learning Rust-Lang from https://www.rust-lang.org/learn
 
 # Data types:
 Keep in mind that Rust is a statically typed language, which means that it must know the types of all variables at compile time.
-
-Scalar types:
-
+## Scalar types:
 
 
-compound types:
+
+## compound types:
 
 
 # Links:
 https://crates.io/
 
-Tutorial docs:
+## Tutorial docs:
 
 https://doc.rust-lang.org/book/title-page.html
 
 https://doc.rust-lang.org/std/prelude/index.html
 
 
-Appendix:
+## Appendix:
 
 https://doc.rust-lang.org/book/appendix-01-keywords.html
 
