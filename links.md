@@ -2,10 +2,15 @@
 https://crates.io/
 
 ## Tutorial docs:
+First tutorial:
 
 https://doc.rust-lang.org/book/title-page.html
 
 https://doc.rust-lang.org/std/prelude/index.html
+
+Rust by example:
+
+https://doc.rust-lang.org/rust-by-example/index.html
 
 
 ## Appendix:
