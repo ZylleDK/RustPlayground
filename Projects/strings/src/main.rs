@@ -5,14 +5,19 @@ fn main() {
 
     // Funktionen 'println!()' fungerer som fstrings fra Python. 
     println!("{title}!");
-
     
     let mut mutable_string = String::from(title);
     mutable_string.push_str(" is fun for everyone!");
     println!("{mutable_string}");
 
-    mutable_string = String::from("test");
-    println!("{mutable_string}");
+    let mut i: u16 = 0;
+
+    while i < 0xFFFF {
+        mutable_string = String::from("test");
+        println!("{mutable_string}{i}");
+        i = i + 1;
+    }
+
 
 
 

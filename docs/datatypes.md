@@ -63,8 +63,6 @@ let second = a[1];
 ### The Vector type
 A vector is a similar collection type provided by the standard library that is allowed to grow or shrink in size
 
-## String types
-
 ### Static string
 A static string is a fixed sized string that is stored on the stack. A static string is defined like ex:
 ```
@@ -85,3 +83,5 @@ mutable_string.push_str(" in action!")
 ```
 mutable_string = String::from("Clears old string with new string!");
 ```
+
+### The Slice type
