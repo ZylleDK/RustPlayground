@@ -62,3 +62,26 @@ let second = a[1];
 ```
 ### The Vector type
 A vector is a similar collection type provided by the standard library that is allowed to grow or shrink in size
+
+## String types
+
+### Static string
+A static string is a fixed sized string that is stored on the stack. A static string is defined like ex:
+```
+let s = "This is a static string";
+```
+
+### Dynamic strings
+A dynamic string is a heap allocated string, that can change in size during runtime. A dynamic string is defined like ex:
+```
+let mutable_string = String::from("This is a dynamic string");
+```
+
+And can be changed during runtime in the following ways:
+```
+mutable_string.push_str(" in action!")
+```
+
+```
+mutable_string = String::from("Clears old string with new string!");
+```

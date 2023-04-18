@@ -7,8 +7,12 @@ fn main() {
     println!("{title}!");
 
     
-    
+    let mut mutable_string = String::from(title);
+    mutable_string.push_str(" is fun for everyone!");
+    println!("{mutable_string}");
 
+    mutable_string = String::from("test");
+    println!("{mutable_string}");
 
 
 
